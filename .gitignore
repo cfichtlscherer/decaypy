@@ -1,0 +1,47 @@
+# ======================
+# Python artifacts
+# ======================
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# ======================
+# Build / packaging
+# ======================
+build/
+dist/
+*.egg-info/
+
+# ======================
+# Editors / OS
+# ======================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ======================
+# Nuclear data policy
+# ======================
+
+# Ignore raw downloaded nuclear data
+decaypy/data/ENDF_FY/*
+decaypy/data/Q_values/*
+decaypy/data/nndc_txt_download/*
+
+# Keep specific tracked files
+!decaypy/data/nuclear_wallet_decay_data.csv
+!decaypy/data/nuclide_names.txt
+
+# Keep processed data
+!decaypy/data/data_processed/**
+
+# Keep placeholder files so directories remain visible
+!decaypy/data/ENDF_FY/.gitkeep
+!decaypy/data/Q_values/.gitkeep
+!decaypy/data/nndc_txt_download/.gitkeep
