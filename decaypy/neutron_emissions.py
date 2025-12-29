@@ -4,7 +4,8 @@ from scipy.constants import Avogadro
 
 # the Watt-distribution parameters a and b for spontaneous fission neutrons
 # source: UCRL-AR-228518-REV-1, table 5 & LA-13422-M, table 5
-SF_watt_constants = {"U235m0": (1.29080, 4.85231),
+SF_watt_constants = {"U234m0": (1.29661, 4.92449),
+                     "U235m0": (1.29080, 4.85231),
                      "U238m0": (1.54245, 6.81057),
                      "Pu238m0": (1.17948, 4.16933),
                      "Pu239m0": (1.12963, 3.80269),
@@ -17,7 +18,10 @@ SF_watt_constants = {"U235m0": (1.29080, 4.85231),
 
 # the Watt-distribution parameters a for fast (2MeV) fission
 # source: calculated with the values from table 6 and equation 3 of 3UCRL-AR-228518-REV-1
-fast_fission_watt_constant_a = {"Pu238m0": 0.8697191336,
+fast_fission_watt_constant_a = {"U234m0": 0.9042447144,
+                                "U235m0": 0.9016628708,
+                                "U238m0": 0.908304262,
+                                "Pu238m0": 0.8697191336,
                                 "Pu239m0": 0.8674254568,
                                 "Pu240m0": 0.8687426148,
                                 "Pu241m0": 0.8615824056,
@@ -75,7 +79,10 @@ multiplicities = {"U235m0": 1.86,
 # atomic weights (in micro AMU)
 # source: IAEA livechart Table of Nuclides (mainly ENSDF data)
 # https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html (2022-11-13 So 14:41)
-atomic_weights = {"U235m0": 235043928.1,
+atomic_weights = {"Ga69m0": 68925573.5,
+                  "Ga70m0": 69926021.9,
+                  "Ga71m0": 70924702.6,
+                  "U235m0": 235043928.1,
                   "U238m0": 238050786.9,
                   "Pu238m0": 238049558.2,
                   "Pu239m0": 239052161.6,

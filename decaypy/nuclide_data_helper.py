@@ -119,9 +119,10 @@ class NuclideDataHelper:
             different_Elevel_of_child, 
             key=lambda x: abs(x - energy_difference)
         )
-
-        if abs(closest_value - energy_difference) / energy_difference <= 0.001:
+        
+        if np.isclose(closest_value, energy_difference, rtol=1e-3, atol=0):
             return closest_value
+        
         else:
             lower_values = [
                 level for level in different_Elevel_of_child 
