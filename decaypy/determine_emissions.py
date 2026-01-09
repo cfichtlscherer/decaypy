@@ -143,7 +143,7 @@ class GammaEmissions:
         Parameters
         ----------
         isotopic_mixture : pd.DataFrame
-            DataFrame with columns: A, Z, Elevel, Total amount (gram)
+            DataFrame with columns: A, Z, Elevel, Amount (gram)
         add_iso_cols : bool, optional
             If True, add parent isotope columns to output. Default: False
             
@@ -177,7 +177,7 @@ class GammaEmissions:
             
             # Calculate total emissions per second
             all_gamma_emissions_pd["Total emissions 1/sec"] = (
-                (row["Total amount (gram)"] / row["A"] * Avogadro) *
+                (row["Amount (gram)"] / row["A"] * Avogadro) *
                 (np.log(2) / all_gamma_emissions_pd["T1/2 (num)"]) *
                 (all_gamma_emissions_pd["Rad Int."] / 100.0)
             )

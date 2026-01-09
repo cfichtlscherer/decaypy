@@ -188,9 +188,9 @@ class TestDecay(unittest.TestCase):
                                     'Amount (gram)': [60, 137],                  
                                     'Decay_time (sec)': 2*[[1.663000e+08, 9.493000e+08]]})    
         decay_results = self.decay.decay_isotopic_mixture(iso_mixture)
-        co60_amount_1_66 = decay_results[(decay_results["Element"] == "CO") & (decay_results["A"] == 60) & (decay_results["Decay Time (sec)"] == 1.663000e+08)]["Total amount (gram)"].values[0]
+        co60_amount_1_66 = decay_results[(decay_results["Element"] == "CO") & (decay_results["A"] == 60) & (decay_results["Decay Time (sec)"] == 1.663000e+08)]["Amount (gram)"].values[0]
     
-        cs137_amount_9_49 = decay_results[(decay_results["Element"] == "CS") & (decay_results["A"] == 137) & (decay_results["Decay Time (sec)"] == 9.493000e+08)]["Total amount (gram)"].values[0]
+        cs137_amount_9_49 = decay_results[(decay_results["Element"] == "CS") & (decay_results["A"] == 137) & (decay_results["Decay Time (sec)"] == 9.493000e+08)]["Amount (gram)"].values[0]
 
         self.assertAlmostEqual(co60_amount_1_66, 30, places=2, msg="Co60 amount after 1.663000e+08 seconds is not as expected.")
         self.assertAlmostEqual(cs137_amount_9_49, 137/2, places=2, msg="Cs137 amount after 9.493000e+08 seconds is not as expected.")

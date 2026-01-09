@@ -625,6 +625,9 @@ class DecayChainSolver:
 
         all_decay_products = pd.concat(list_all_decay_results)
         all_decay_products = self.combine_all_decay_products(all_decay_products)
+
+        all_decay_products = all_decay_products.rename(columns={'Total amount (number atoms)': 'Amount (number atoms)', 'Total amount (gram)': 'Amount (gram)'})
+
         return all_decay_products
 
 
