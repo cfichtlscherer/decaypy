@@ -354,6 +354,11 @@ class Decay:
                 nuclide_chain['Elevel_child'] = ""
                 nuclide_chain['T1/2 (num) child'] = ""
 
+            if type_of_decay == "no_child_data" and "Elevel_child" not in nuclide_chain:
+                nuclide_chain["Elevel_child"] = ""
+                nuclide_chain["T1/2 (num) child"] = ""
+                nuclide_chain["Intensity"] = ""
+
             if type_of_decay == "decay_to_a_child":
                 nuclide_chain["Elevel_child"] = reached_Elevel
                 nuclide_chain["T1/2 (num) child"] = self.helper.get_from_nuclide_Elevel_half_life(child[0], child[1], reached_Elevel)

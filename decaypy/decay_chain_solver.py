@@ -404,7 +404,7 @@ class DecayChainSolver:
         )
         all_isotopes_in_chain = all_isotopes_in_chain[
             all_isotopes_in_chain['T1/2 (num)'] != ''
-        ]
+        ].reset_index(drop=True
 
         decay_matrix = np.zeros(
             (len(all_isotopes_in_chain), len(all_isotopes_in_chain))
