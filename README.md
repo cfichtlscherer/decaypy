@@ -1,4 +1,6 @@
 # decaypy
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20323485.svg)](https://doi.org/10.5281/zenodo.20323485)
+
 __decaypy__ is a Python library for accurately computing nuclear decay processes, including both spontaneous and induced fission. 
 It uses data from the Evaluated Nuclear Structure Data File (ENSDF), and incorporates supplementary information from the Nuclear Wallet Cards and ENDF/B-VIII.0 fission yields.
 In addition to isotopic evolution, decaypy can determine the resulting gamma emissions.
@@ -104,3 +106,17 @@ To use NuDat3 decay data, please download the TXT files manually:
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 This license excludes all nuclear data that was downloaded from external sources.
+
+## Citation
+If you use decaypy in your research, please cite it. Citation metadata is provided in [`CITATION.cff`](CITATION.cff), and GitHub's "Cite this repository" button will generate BibTeX/APA entries automatically. A BibTeX example:
+
+```bibtex
+@software{fichtlscherer_decaypy_2026,
+  author  = {Fichtlscherer, Christopher},
+  title   = {decaypy: A Python tool to calculate decay including spontaneous and induced fission, based on ENSDF data},
+  year    = {2026},
+  version = {3.0.0},
+  doi     = {10.5281/zenodo.20323485},
+  url     = {https://doi.org/10.5281/zenodo.20323485}
+}
+```

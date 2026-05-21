@@ -3,6 +3,14 @@ message: "If you use decaypy in your research, please cite it as below."
 title: "decaypy: A Python tool to calculate decay including spontaneous and induced fission, based on ENSDF data"
 version: 3.0.0
 date-released: 2026-05-21
+doi: 10.5281/zenodo.20323485
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20323485
+    description: "Zenodo concept DOI (all versions)"
+  - type: doi
+    value: 10.5281/zenodo.20323486
+    description: "Zenodo archive of v3.0.0"
 authors:
   - family-names: Fichtlscherer
     given-names: Christopher
