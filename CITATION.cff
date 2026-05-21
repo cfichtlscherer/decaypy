@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use decaypy in your research, please cite it as below."
+title: "decaypy: A Python tool to calculate decay including spontaneous and induced fission, based on ENSDF data"
+version: 3.0.0
+date-released: 2026-05-21
+authors:
+  - family-names: Fichtlscherer
+    given-names: Christopher
+    email: fichtlscherer@mailbox.org
+    orcid: "https://orcid.org/0009-0003-4011-0810"
+license: MIT
+repository-code: "https://github.com/cfichtlscherer/decaypy"
+type: software
+keywords:
+  - radioactive-decay
+  - nuclear-physics
+  - ENSDF
+  - fission
+  - decay-chain
+  - python
