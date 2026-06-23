@@ -45,3 +45,7 @@ decaypy/data/nndc_txt_download/*
 !decaypy/data/ENDF_FY/.gitkeep
 !decaypy/data/Q_values/.gitkeep
 !decaypy/data/nndc_txt_download/.gitkeep
+
+# Keep package markers so data dirs are importable after a fresh clone
+!decaypy/data/ENDF_FY/__init__.py
+!decaypy/data/Q_values/__init__.py
