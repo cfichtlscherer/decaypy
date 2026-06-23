@@ -23,13 +23,7 @@ setuptools.setup(
         "test": ["pytest"],
     },
     packages=setuptools.find_packages(),
-    package_data={
-        "NNDC_decay": ["data/*",
-                       "data/data_processed/*",
-                       "data/Q_values/*",
-                       "data/ENDF_FY/ENDF-B-VIII.0_nfy/*",
-                       "data/ENDF_FY/ENDF-B-VIII.0_sfy/*"]
-    },
+    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
